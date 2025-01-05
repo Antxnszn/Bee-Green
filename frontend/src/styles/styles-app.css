@@ -1,0 +1,85 @@
+.plants-app {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    align-items: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .form-section {
+    margin-bottom: 15px;
+  }
+  
+  .form-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin-left: 5px; 
+  }
+/* Contenedor del campo de entrada */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Símbolo de moneda */
+.currency-symbol {
+  position: absolute;
+  left: 10px; /* Espaciado del símbolo */
+  font-size: 1rem;
+  color: #666; /* Color del símbolo */
+}
+
+/* Campo de entrada */
+.budget-input {
+  padding-left: 25px; /* Espacio para el símbolo */
+  width: 100px; /* Ajusta el tamaño del campo */
+  height: 30px; /* Altura del campo */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Ocultar flechas en Firefox */
+input[type="number"] {
+    -moz-appearance: textfield; 
+}
+  
+  button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #1E1F21;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .status-message {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .results h2 {
+    margin-bottom: 10px;
+  }
+  
