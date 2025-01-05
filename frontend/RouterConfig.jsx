@@ -4,6 +4,8 @@ import HowItWorks from "./src/pages/HowItWorks";
 import PlantsApp from "./src/pages/PlantsApp";
 import AboutUs from "./src/pages/AboutUs";
 import Example from "./src/pages/Example";
+import Footer from "./src/components/Footer";
+import ContactUs from './src/pages/ContactUs';
 
 const routes = [
   {
@@ -12,6 +14,7 @@ const routes = [
       <>
         <Header />
         <App />
+        <Footer />
       </>
     ),
   },
@@ -21,6 +24,7 @@ const routes = [
       <>
         <Header />
         <HowItWorks />
+        <Footer />
       </>
     ),
   },
@@ -30,6 +34,7 @@ const routes = [
       <>
         <Header />
         <PlantsApp />
+        <Footer />
       </>
     ),
   },
@@ -39,6 +44,7 @@ const routes = [
       <>
         <Header />
         <AboutUs />
+        <Footer />
       </>
     ),
   },
@@ -48,6 +54,18 @@ const routes = [
       <>
         <Header />
         <Example />
+        <Footer />
+      </>
+    ),
+  },
+
+  {
+    path: '/ContactUs',
+    component: (
+      <>
+        <Header />
+        <ContactUs />
+        <Footer />
       </>
     ),
   }

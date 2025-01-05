@@ -69,6 +69,13 @@ function Header() {
                 Nosotros
               </Link>
             </li>
+            <li>
+              <Link 
+              to="/ContactUs"
+              className="block py-2 px-3 text-[#453B1E] rounded hover:bg-[#ECD99C] md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-[#705600]">
+                Contáctanos
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
