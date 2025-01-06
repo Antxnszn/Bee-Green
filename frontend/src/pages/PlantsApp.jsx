@@ -14,10 +14,59 @@ const PlantsApp = () => {
     budget: "",
   });
   const plantas = {
-    "Rosas": { costo: 15 },
-    "Tulipanes": { costo: 10 },
-    "Orquídeas": { costo: 20 },
-    "Girasoles": { costo: 8 }
+    "Rosas": {costo: 102.21},
+    "Tulipanes": {costo: 164.67},
+    "Orquídeas": {costo: 210.39},
+    "Girasoles": {costo: 150.24},
+    "Clavel": {costo: 233.30},
+    "Margaritas": {costo: 133.73},
+    "Lirios": {costo: 134.99},
+    "Hortensias": {costo: 196.83},
+    "Dalias": {costo: 84.57},
+    "Gardenias": {costo: 173.04},
+    "Camelias": {costo: 103.13},
+    "Jazmín": {costo: 135.74},
+    "Amapolas": {costo: 194.79},
+    "Violetas": {costo: 226.71},
+    "Azaleas": {costo: 148.64},
+    "Geranios": {costo: 200.86},
+    "Cactus": {costo: 125.20},
+    "Suculentas": {costo: 180.26},
+    "Bonsáis": {costo: 178.84},
+    "Begonias": {costo: 78.43},
+    "Lavandas": {costo: 69.18},
+    "Helechos": {costo: 154.78},
+    "Crisantemos": {costo: 203.26},
+    "Petunias": {costo: 192.72},
+    "Buganvillas": {costo: 138.49},
+    "Lirios del Valle": {costo: 204.78},
+    "Ciclamen": {costo: 81.56},
+    "Aloe Vera": {costo: 78.19},
+    "Romero": {costo: 208.88},
+    "Albahaca": {costo: 230.35},
+    "Menta": {costo: 113.55},
+    "Eucalipto": {costo: 204.52},
+    "Ficus": {costo: 114.90},
+    "Croto": {costo: 161.11},
+    "Bromelia": {costo: 211.15},
+    "Dracaena": {costo: 237.18},
+    "Palma Areca": {costo: 205.66},
+    "Espatifilo": {costo: 179.23},
+    "Cuna de Moisés": {costo: 183.40},
+    "Impatiens": {costo: 225.93},
+    "Lantanas": {costo: 197.52},
+    "Malvón": {costo: 225.28},
+    "Fucsia": {costo: 201.18},
+    "Calanchoe": {costo: 169.32},
+    "Diefembaquia": {costo: 144.03},
+    "Zamioculca": {costo: 185.75},
+    "Filodendro": {costo: 122.53},
+    "Sansevieria": {costo: 149.66},
+    "Pothos": {costo: 118.00},
+    "Aglaonema": {costo: 124.97},
+    "Calatea": {costo: 75.00},
+    "Maranta": {costo: 102.21},
+    "Belen": {costo: 164.47}
   };
 
   const [optimizationResult, setOptimizationResult] = useState(null);
@@ -32,7 +81,7 @@ const PlantsApp = () => {
 
   const purchaseTypeIcons = {
     Menudeo: <ShoppingCart className="w-5 h-5" />,
-    "Consumo Normal": <Store className="w-5 h-5" />,
+    Mayoreo: <Store className="w-5 h-5" />,
   };
 
   const handleInputChange = (e) => {
@@ -146,9 +195,9 @@ const PlantsApp = () => {
 
                 {/* Plant Types Section */}
                 <div className="space-y-3">
-                  <h3 className="font-medium text-gray-700">Tipos de plantas</h3>
+                  <h3 className="font-medium text-gray-700">Plantas</h3>
                   <div className="grid grid-cols-2 gap-3">
-                    {["Rosas", "Tulipanes", "Orquídeas", "Girasoles"].map((plant) => (
+                     {Object.keys(plantas).map((plant) => (
                       <label
                         key={plant}
                         className={`flex items-center gap-2 p-3 rounded-xl border-2 cursor-pointer transition-all duration-200 hover:shadow-md

@@ -2,13 +2,13 @@ import { Routes, Route, Link } from "react-router-dom";
 
 function ContactUs() {
   return (
-    <div className="w-full h-screen flex items-center justify-center bg-[#FFF6B7]">
-      <div className="w-full max-w-md bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 p-6">
+    <div className="w-full h-screen flex items-center justify-center bg-gradient-to-t from-[#F2DFA2] via-[#F2DFA2] to-[#F2DFA2]">
+      <div className="lg:px-44 lg:py-10 flex flex-col lg:flex-row gap-10 lg:gap-[10em]">
         {/* Contact Card for Itziar */}
-        <div className="flex flex-col items-center mb-12">
-          <img className="w-28 h-28 mb-4 rounded-full shadow-xl" src="itzi.jpg" alt="Itziar image" />
-          <h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">Itziar Segura</h5>
-          <span className="text-sm text-gray-500 dark:text-gray-400">AI Engineering Student</span>
+        <div className="flex flex-col items-center">
+          <img className="w-[150px] h-[150px] mb-4 rounded-full" src="itzi.jpg" alt="Itziar image" />
+          <h5 className="mb-2 text-[2rem] font-bold text-[#1E1F21]">Itziar Segura</h5>
+          <span className="text-md text-[#4B4D50]">AI Engineering Student</span>
           <div className="flex mt-4 space-x-4">
             <a
               href="https://github.com/koriand-33"
@@ -27,9 +27,9 @@ function ContactUs() {
 
         {/* Contact Card for Antonio */}
         <div className="flex flex-col items-center">
-          <img className="w-28 h-28 mb-4 rounded-full shadow-xl" src="roberto.webp" alt="Antonio image" />
-          <h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">Antonio Estrada</h5>
-          <span className="text-sm text-gray-500 dark:text-gray-400">AI Engineering Student</span>
+          <img className="w-[150px] h-[150px] mb-4 rounded-full" src="roberto.webp" alt="Antonio image" />
+          <h5 className="mb-2 text-[2rem] font-bold text-[#1E1F21]">Antonio Estrada</h5>
+          <span className="text-md text-[#4B4D50]">AI Engineering Student</span>
           <div className="flex mt-4 space-x-4">
             <a
               href="https://github.com/Antxnszn"

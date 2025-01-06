@@ -14,7 +14,7 @@ function Header() {
         {/* Logo Section */}
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <BeeIcon />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#453B1E]">Bee-Green</span>
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-[#453B1E]">Leaf-Bee</span>
         </Link>
 
         {/* Right Section: Image and Toggle Button */}
@@ -26,7 +26,7 @@ function Header() {
             type="button"
             aria-controls="navbar-sticky"
             aria-expanded={isMenuOpen}
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#E6E0CE] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none hover:bg-[#ECD99C]"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#E6E0CE] rounded-lg md:hidden bg-[#B69300] hover:bg-gray-100 focus:outline-none hover:bg-[#ECE6D4]"
           >
             <span className="sr-only">Open main menu</span>
             <svg
