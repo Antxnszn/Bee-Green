@@ -102,7 +102,7 @@ const PlantsApp = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8080/",
+        "https://bee-green.onrender.com",
         {
           selected_plants: formData.plantTypes,
           budget: formData.budget,
