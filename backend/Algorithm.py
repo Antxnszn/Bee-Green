@@ -161,11 +161,12 @@ def inicializar_poblacion(workers, lim_inf, lim_sup, n, restricciones, costos, b
 def fase_obrera(workers, restricciones, costos, beneficios, maximo):
     global poblacion, aptitudes
     for i in range(workers):
-        vecino = generar_vecino(poblacion[i], lim_inf, lim_sup, restricciones, costos, maximo)
+        k = random.choice([j for j in range(workers) if j != i])  # Seleccionar otra abeja al azar
+        vecino = generar_vecino(poblacion[k], lim_inf, lim_sup, restricciones, costos, maximo)
         aptitud_vecino = calcular_aptitud(vecino, costos, beneficios, maximo)
-        if aptitud_vecino > aptitudes[i]:
-            poblacion[i] = vecino
-            aptitudes[i] = aptitud_vecino
+        if aptitud_vecino > aptitudes[k]:  # Comparación con la aptitud de k en lugar de i
+            poblacion[k] = vecino
+            aptitudes[k] = aptitud_vecino
             lim_intentos[i] = 0
         else:
             lim_intentos[i] += 1
